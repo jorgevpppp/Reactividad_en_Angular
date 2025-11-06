@@ -1,0 +1,8 @@
+<h2>Publicaciones </h2>
+
+<ul>
+  <li *ngFor="let post of apiService.posts()">
+    <strong>{{ post.title }}</strong><br />
+    {{ post.body }}
+  </li>
+</ul>
